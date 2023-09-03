@@ -1,0 +1,206 @@
+*{box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container>*{
+    box-shadow: -1px 6px 7px 0px black;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.header{
+    grid-area: header;
+    background-color: white;
+
+}
+
+.nav {
+    grid-area: nav;
+    background-color:white;
+
+}
+
+.article1{
+    grid-area: article1;
+    background-color: white;
+}
+
+.article2{
+      grid-area: article2;
+      background-color: white;
+}
+
+.article3{
+    grid-area: article3;
+    background-color: white;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: black;
+}
+
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "article1"
+    "article2"
+    "article3"
+    "footer"
+          
+}
+
+/*  no funciana : funciono cuando le quite esto :a */
+@media(min-width:400px){
+    .grid-container{
+        grid-template: 
+        "header header"350px
+        "nav article1"100px
+        "nav  article2"200px
+        "nav article3"100px
+        "footer footer"100px
+        ;
+
+    
+    }
+}
+
+
+
+ 
+@media (min-width: 1080px){
+    .grid-container {
+        grid-template: 
+            "header  header header" 220px  
+            "nav article1 article1" 220px
+            "nav article2 article2" 220px
+            "nav article3 article3"220px
+            "footer footer footer" 150px / 
+            220px auto 200px;
+    }
+    }
+
+    /* imagenes del logo */
+    .header img{
+        width: 200px;
+        height:200px ;
+        float: left;
+    }
+    
+    h1{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+p{
+    font-family: Tahoma, sans-serif;
+}
+/* imagen del footer */
+
+.footer img{
+    width: 120px;
+    height: 120px;
+}
+
+/*(Barra lateral ) sidebar " menu" */
+
+menu {
+    border-left-style: solid;
+    gap: 10;
+    border-right-style: solid;
+    border-color:black;
+    display: block;
+    border-radius: 15px;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+}
+
+.m1 {
+    font-size: 19px;
+    color: black;
+    border-radius: 0 12px 0 0;
+    text-align: center;
+    padding: 8%;
+    list-style: none;
+}
+
+.m1:hover {
+    background-color:white;
+    color: #78281F;
+    list-style: none;
+}
+
+.m2 {
+    font-size: 19px;
+    color: black;
+    border-radius: 0 12px 0 0;
+    margin-top: 10px;
+    padding: 10%;
+    text-align: center;
+    list-style: none;
+}
+
+.m2:hover {
+    background-color: white;
+    color: #78281F;
+    list-style: none;
+}
+
+.m3 {
+    font-size: 19px;
+    color:black;
+    border-radius: 0 12px 0 0;
+    margin-top: 10px;
+    padding: 10%;
+    text-align: center;
+    list-style: none;
+}
+
+.m3:hover {
+    background-color: white;
+    color: #78281F;
+    list-style: none;
+}
+
+.m4 {
+    font-size: 19px;
+    color: black;
+    border-radius: 0 12px 0 0;
+    margin-top: 10px;
+    padding: 10%;
+    text-align: center;
+    list-style: none;
+}
+
+.m4:hover {
+    background-color: white;
+    color: #78281F;
+    list-style: none;
+}
+
+.m5 {
+    font-size: 19px;
+    color: black;
+    border-radius: 0 12px 0 0;
+    margin-top: 10px;
+    padding: 9%;
+    text-align: center;
+    
+}
+
+.m5:hover {
+    background-color: white;
+    color: #78281F;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
